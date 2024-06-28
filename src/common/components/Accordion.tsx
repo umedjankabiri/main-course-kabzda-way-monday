@@ -1,11 +1,13 @@
+import {AccordionTitle} from "common/components/AccordionTitle.tsx";
+import {AccordionBody} from "common/components/AccordionBody.tsx";
+
 export const Accordion = () => {
+    console.log("Accordion rendering")
+
     return (
         <div>
-            <h3>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </h3>
+            <AccordionTitle/>
+            <AccordionBody/>
         </div>
     );
 };
