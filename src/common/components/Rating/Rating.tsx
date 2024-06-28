@@ -1,6 +1,7 @@
-import {Star} from "common/components/Star";
+import {Star} from "common/components/Star/Star.tsx";
+import {RatingProps} from "common/types/RatingProps.ts";
 
-export const Rating = (props: any) => {
+export const Rating = (props: RatingProps) => {
     console.log("Rating rendering")
     if (props.value === 1) {
         return (
