@@ -1,6 +1,8 @@
-import {Star} from "common/components/Star.tsx";
+import {Star} from "common/components/Star";
 
 export const Rating = () => {
+    console.log("Rating rendering")
+
     return (
             <div>
                 <Star/>
