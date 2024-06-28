@@ -1,7 +1,7 @@
-import './App.css'
-import {Rating} from "common/components/Rating.tsx";
+import 'common/components/App/App.css'
+import {Rating} from "common/components/Rating/Rating.tsx";
 import {Accordion} from "common/components/Accordion/Accordion.tsx";
-import {PageTitle} from "../app/PageTitle.tsx";
+import {PageTitle} from "common/components/App/PageTitle.tsx";
 
 function App() {
   console.log("App rendering")
@@ -12,8 +12,8 @@ function App() {
         <PageTitle title={'My friends'}/>
         Article 1
       <Rating value={3}/>
-      <Accordion title={'Menu'}/>
-      <Accordion title={'Users'}/>
+      <Accordion title={'Menu'} collapsed={false}/>
+      <Accordion title={'Users'} collapsed={true}/>
         Article 2
       <Rating value={0}/>
       <Rating value={1}/>
