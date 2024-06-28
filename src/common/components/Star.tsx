@@ -1,9 +1,7 @@
-export const Star = () => {
+export const Star = (props: any) => {
     console.log("Star rendering")
-
-    return (
-        <div>
-            Star
-        </div>
-    );
+    if (props.selected) {
+        return <span><b>Start </b></span>
+    } else
+        return <span>Start </span>
 };
