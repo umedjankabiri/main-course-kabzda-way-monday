@@ -13,7 +13,7 @@ function App() {
         Article 1
       <Rating value={3}/>
       <Accordion title={'Menu'} collapsed={false}/>
-      <Accordion title={'Users'} collapsed={true}/>
+      <Accordion title={'Users'} collapsed={false}/>
         Article 2
       <Rating value={0}/>
       <Rating value={1}/>
