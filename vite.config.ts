@@ -8,7 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       common: path.resolve(__dirname, 'src/common'),
-      types: path.resolve(__dirname, 'src/types'),
+      types: path.resolve(__dirname, 'src/common'),
     }
   }
 })
