@@ -5,11 +5,10 @@ import {AccordionProps} from "common/types/AccordionProps.ts";
 export const Accordion = (props: AccordionProps) => {
     console.log("Accordion rendering")
 
-    return props.collapsed ? <AccordionTitle title = {props.title}/>
-        : (
+    return (
             <>
                 <AccordionTitle title = {props.title}/>
-                <AccordionBody/>
+                { !props.collapsed && <AccordionBody/>}
             </>
 
     );
