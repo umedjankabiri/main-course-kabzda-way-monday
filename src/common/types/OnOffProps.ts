@@ -1,3 +1,3 @@
 export type OnOffProps = {
-    onOff: boolean
+    on: boolean
 }
