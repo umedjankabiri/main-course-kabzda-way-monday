@@ -3,7 +3,7 @@ import {Rating} from "common/components/Rating/Rating.tsx";
 import {Accordion} from "common/components/Accordion/Accordion.tsx";
 import {PageTitle} from "common/components/App/PageTitle.tsx";
 import {OnOff} from "common/components/OnOff/OnOff.tsx";
-import {LocalOnOff} from "common/components/LocalOnOff/LocalOnOff.tsx";
+import {UncontrolledOnOff} from "common/components/UncontrolledOnOff/UncontrolledOnOff.tsx";
 import {UncontrolledAccordion} from "common/components/UncontrolledAccordion/UncontrolledAccordion.tsx";
 import {UncontrolledRating} from "common/components/UncontrolledRating/UncontrolledRating.tsx";
 
@@ -26,7 +26,7 @@ function App() {
             <Rating value={4}/>
             <Rating value={5}/>
             <OnOff on={true}/>
-            <LocalOnOff/>
+            <UncontrolledOnOff/>
             <UncontrolledAccordion title="Menu"/>
             <UncontrolledAccordion title="Users"/>
             <UncontrolledRating/>
