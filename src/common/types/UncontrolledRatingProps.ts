@@ -1,3 +1,0 @@
-export type UncontrolledRatingProps = {
-    value: 0 | 1 | 2 | 3 | 4 | 5
-}
