@@ -14,6 +14,7 @@ export const OnOff = (props: OnOffProps) => {
             <div style={props.on ? {backgroundColor: "green"} : {backgroundColor: "red"}} className={s.circle}>
 
             </div>
+            <span>Controlled OnOff component</span>
         </div>
     );
 };
