@@ -1,6 +1,7 @@
 import {CSSProperties, useState} from "react";
 
 export const UncontrolledOnOff = () => {
+    console.log("UncontrolledOnOff rendering")
     const [on, setOn] = useState<boolean>(false)
 
     const mainWrapper: CSSProperties = {
@@ -44,7 +45,6 @@ export const UncontrolledOnOff = () => {
             <div style={onStyle} onClick={() => setOn(true)}>ON</div>
             <div style={offStyle} onClick={() => setOn(false)}>OFF</div>
             <div style={indicatorStyle}></div>
-            <span>Uncontrolled OnOff component</span>
         </div>
     );
 };
