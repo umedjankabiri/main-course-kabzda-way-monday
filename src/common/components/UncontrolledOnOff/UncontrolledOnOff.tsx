@@ -40,10 +40,13 @@ export const UncontrolledOnOff = () => {
         backgroundColor: on ? "green" : "red",
     }
 
+    const onClickOnHandler = () => setOn(true)
+    const onClickOffHandler = () => setOn(false)
+
     return (
         <div style={mainWrapper}>
-            <div style={onStyle} onClick={() => setOn(true)}>ON</div>
-            <div style={offStyle} onClick={() => setOn(false)}>OFF</div>
+            <div style={onStyle} onClick={onClickOnHandler}>ON</div>
+            <div style={offStyle} onClick={onClickOffHandler}>OFF</div>
             <div style={indicatorStyle}></div>
         </div>
     );
