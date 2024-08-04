@@ -12,6 +12,9 @@ import {RatingValueProps} from "common/types/RatingValueProps.ts";
 function App() {
     console.log("App rendering")
     const [ratingValue, setRatingValue] = useState<RatingValueProps>(0)
+    const [accordionMenu, setAccordionMenu] = useState<boolean>(false)
+    const [accordionUsers, setAccordionUsers] = useState<boolean>(false)
+    const [on, setOn] = useState<boolean>(false)
 
     return (
         <div>
@@ -19,11 +22,11 @@ function App() {
             <PageTitle title={'This is APP component'}/>
             <PageTitle title={'My friends'}/>
             Article 1
-            <Accordion title={'Menu'} collapsed={false}/>
-            <Accordion title={'Users'} collapsed={false}/>
+            <Accordion title={'Menu'} collapsed={accordionMenu} onClick={setAccordionMenu}/>
+            <Accordion title={'Users'} collapsed={accordionUsers} onClick={setAccordionUsers}/>
             Article 2
             <Rating value={ratingValue} onClick={setRatingValue}/>
-            <OnOff on={true}/>
+            <OnOff on={on} onClick={setOn}/>
 
             <h1>Uncontrolled components</h1>
             <UncontrolledOnOff/>
