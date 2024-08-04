@@ -1,4 +1,7 @@
+import {RatingValueProps} from "common/types/RatingValueProps.ts";
+
 export type StarProps = {
+    value: RatingValueProps
     selected: boolean
-    onClick?: () => void
+    onClick?: (value: RatingValueProps) => void
 }
