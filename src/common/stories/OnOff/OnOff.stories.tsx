@@ -15,3 +15,4 @@ export default meta
 
 const onClickHandler = action("Clicked handler")
 export const switchedOn = () => <OnOff on={true} onClick={onClickHandler}/>
+export const switchedOff = () => <OnOff on={false} onClick={onClickHandler}/>
