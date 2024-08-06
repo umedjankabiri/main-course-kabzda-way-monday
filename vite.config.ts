@@ -9,6 +9,7 @@ export default defineConfig({
     alias: {
       common: path.resolve(__dirname, 'src/common'),
       types: path.resolve(__dirname, 'src/common'),
+      stories: path.resolve(__dirname, 'src/common'),
     }
   }
 })
